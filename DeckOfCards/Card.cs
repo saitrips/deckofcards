@@ -20,14 +20,14 @@ namespace DeckOfCards
             Ten = 10,
             Jack = 11,
             Queen = 12,
-            King = 13,
+            King = 13
         }
         public enum CardSuit
         {
             Club = 1,
             Diamond = 2,
             Heart = 3,
-            Spades = 4,
+            Spades = 4
         }
         public CardSuit Suit { get; set; }
         public CardFace Face { get; set; }
@@ -40,8 +40,7 @@ namespace DeckOfCards
             Face = (CardFace)cface;
         }
         public override string ToString()
-        {
-            //return suit + ":" + face;
+        {            
             return Suit + ":" + Face;
         }
     }

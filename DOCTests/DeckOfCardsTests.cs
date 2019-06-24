@@ -30,7 +30,7 @@ namespace DOCTests
 
             for (int i = 0; i < tempDeck.deck.Length; i++)
             {
-                if (tempDeck.deck[i].Suit != pokerDesk.deck[i].Suit)
+                if (tempDeck.deck[i].Suit != pokerDesk.deck[i].Suit || tempDeck.deck[i].Face != pokerDesk.deck[i].Face)
                 {
 
                     isdeckDifferent = true;

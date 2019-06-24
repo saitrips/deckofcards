@@ -18,6 +18,8 @@ namespace DeckOfCards
                 deck = new Card[No_Of_Cards];
                 int ct = 0;
 
+                //intialize the deck array with poker cards.
+
                 for (int i = 1; i < 5; i++)
                 {
                     for (int j = 1; j < 14; j++)
@@ -31,7 +33,7 @@ namespace DeckOfCards
                 Console.WriteLine("Error: " + x.Message + Environment.NewLine + Environment.NewLine + x.StackTrace);
             }
         }
-        //shuffle the deck using n exchanges
+        //shuffle the deck n times
         public void shuffle(int n)
         {
             try
@@ -56,6 +58,7 @@ namespace DeckOfCards
             }
 
         }
+        //deal a Card to Caller.
         public Card DealCard()
         {
             try
